@@ -1,0 +1,25 @@
+Somatic Symptom Disorder
+Diagnostic Criteria 300.82 (F45.1) (p 347 in pdf)
+
+
+Categories:
+-----------------------------
+1. Gender
+2. Age
+3. (C)AFAB/(C)AMAB
+4. Symptoms, thoughts
+5. Symptoms, physical (somatic)
+6. Symptoms, actions
+7. Comorbid (already have disorders)
+8. Persistency/lengthh 
+9. Specifiers (Check to see how they are categorized)
+
+Numerical:
+------------------------------
+1	One or more somatic symptoms that are distressing or result in significant disruption of daily life
+2	Disproportionate and persistent thoughts about the seriousness of one’s symptoms
+3	Persistently high level of anxiety about health or symptoms
+4	Excessive time and energy devoted to somatic symptoms or health concerns
+5	state of being symptomatic is persistent (typically more than 6 months)
+6*	With predominant pain
+7*	Persistent: Severe symptoms, marked impairment, and long duration (more than 6 months)
