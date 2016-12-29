@@ -1,6 +1,8 @@
 Somatic Symptom Disorder
 Diagnostic Criteria 300.82 (F45.1) (p 347 in pdf)
 
+Illness Anxiety Disorder
+Diagnostic Criteria 300.7 (F45.21) (p 351 in pdf)
 
 Categories:
 -----------------------------
@@ -14,7 +16,7 @@ Categories:
 8. Persistency/lengthh 
 9. Specifiers (Check to see how they are categorized)
 
-Numerical:
+Numerical: (* = specify if)
 ------------------------------
 1	One or more somatic symptoms that are distressing or result in significant disruption of daily life
 2	Disproportionate and persistent thoughts about the seriousness of one’s symptoms
@@ -23,3 +25,14 @@ Numerical:
 5	state of being symptomatic is persistent (typically more than 6 months)
 6*	With predominant pain
 7*	Persistent: Severe symptoms, marked impairment, and long duration (more than 6 months)
+8	Preoccupation with having or acquiring a serious illness
+9	No somatic symptoms
+10	Mild somatic symptoms
+11	Preoccupation of developing illness is clearly excessive or disproportionate
+12	There is a high level of anxiety about health, and the individual is easily alarmed about personal health status
+13	Performs excessive health-related behaviors or exhibits maladaptive avoidance
+14	Illness preoccupation has been present for at least 6 months, but the specific illness that is feared may change over that period of time
+15	No symptoms of somatic symptom disorder, panic disorder, generalized anxiety disorder, body dysmorphic disorder, obsessive-compulsive 
+	disorder, or delusional disorder, somatic type.
+16*	Care-seeking type: Medical care, including physician visits or undergoing tests and procedures, is frequently used
+17*	Care-avoidant type: Medical care is rarely used
