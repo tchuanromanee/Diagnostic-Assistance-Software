@@ -9,19 +9,18 @@ Conversion Disorder
 
 Psychological Factors Affecting Other Medical Conditions
 Diagnostic Criteria 316 (F54) (p 358 in pdf)
-A. A medical symptom or condition (other than a mental disorder) is present.
-B. Psychological or behavioral factors adversely affect the medical condition in one of the
-following ways:
-1. The factors have influenced the course of the medical condition as shown by a
-close temporal association between the psychological factors and the development
-or exacerbation of, or delayed recovery from, the medical condition.
-2. The factors interfere with the treatment of the medical condition (e.g., poor adherence).
-3. The factors constitute additional well-established health risks for the individual.
-4. The factors influence the underlying pathophysiology, precipitating or exacerbating
-symptoms or necessitating medical attention.
-C. The psychological and behavioral factors in Criterion B are not better explained by another
-mental disorder (e.g., panic disorder, major depressive disorder, posttraumatic
-stress disorder).
+
+Factitious Disorder
+Diagnostic Criteria 300.19 (F68.10)
+	Factitious Disorder Imposed on Self
+	Factitious Disorder Imposed on Another (Previously Factitious Disorder by Proxy)
+
+Other Specified Somatic Symptom and Related Disorder
+300.89 (F45.8) (no input)
+
+Unspecified Somatic Symptom and
+Related Disorder
+300.82 (F45.9) (no input)
 
 Categories:
 -----------------------------
@@ -61,3 +60,17 @@ Numerical: (* = specify if)
 21	The symptom or deficit causes clinically significant distress or impairment in social, occupational, or other important areas of 
 	functioning or warrants medical evaluation.
 22	A medical symptom or condition (other than a mental disorder) is present
+23	Psychological or behavioral factors adversely affect the medical condition in one of the following ways:
+		1. The factors have influenced the course of the medical condition as shown by a close temporal association between the 
+		   psychological factors and the development or exacerbation of, or delayed recovery from, the medical condition.
+		2. The factors interfere with the treatment of the medical condition (e.g., poor adherence).
+		3. The factors constitute additional well-established health risks for the individual.
+		4. The factors influence the underlying pathophysiology, precipitating or exacerbating symptoms or necessitating medical attention.
+24	The psychological and behavioral factors in Criterion 23 are not better explained by another mental disorder 
+	(e.g., panic disorder, major depressive disorder, posttraumatic stress disorder).
+25	Falsification of physical or psychological signs or symptoms, or induction of injury or disease, associated with identified deception.
+26	The individual presents himself or herself to others as ill, impaired, or injured.
+27	The deceptive behavior is evident even in the absence of obvious external rewards.
+28	Falsification of physical or psychological signs or symptoms, or induction of injury or disease, in another, associated with 
+	identified deception
+29	The individual presents another individual (victim) to others as ill, impaired, or injured.
