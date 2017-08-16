@@ -1,8 +1,6 @@
-Somatic Symptom Disorder
-Diagnostic Criteria 300.82 (F45.1) (p 347 in pdf)
+300.82, F45.1, Somatic Symptom Disorder, 347,
 
-Illness Anxiety Disorder
-Diagnostic Criteria 300.7 (F45.21) (p 351 in pdf)
+300.7, F45.21, Illness Anxiety Disorder, 351,
 
 Conversion Disorder
 (Functional Neurological Symptom Disorder) (F44.X) (p. 354 in pdf)
@@ -26,20 +24,16 @@ Categories:
 -----------------------------
 1. Gender
 2. Age
-3. (C)AFAB/(C)AMAB
-4. Symptoms, thoughts
-5. Symptoms, physical (somatic)
-6. Symptoms, actions
-7. Comorbid (already have disorders)
-8. Persistency/lengthh 
-9. Specifiers (Check to see how they are categorized)
+3. Comorbid (already have disorders)
+4,6,8,10,12,14 Symptoms 1-6
+5,7,9,11,13,15. Persistent? (>6mo) 
 
 Numerical: (* = specify if)
 ------------------------------
-1	One or more somatic symptoms that are distressing or result in significant disruption of daily life
-2	Disproportionate and persistent thoughts about the seriousness of one’s symptoms
-3	Persistently high level of anxiety about health or symptoms
-4	Excessive time and energy devoted to somatic symptoms or health concerns
+(SSD)	One or more somatic symptoms that are distressing or result in significant disruption of daily life
+1	Disproportionate and persistent thoughts about the seriousness of oneâ€™s symptoms
+2	Persistently high level of anxiety about health or symptoms
+3	Excessive time and energy devoted to somatic symptoms or health concerns
 5	state of being symptomatic is persistent (typically more than 6 months)
 6*	With predominant pain
 7*	Persistent: Severe symptoms, marked impairment, and long duration (more than 6 months)
