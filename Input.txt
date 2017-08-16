@@ -1,3 +1,5 @@
+List differential diagnoses for each disorder
+
 300.82, F45.1, Somatic Symptom Disorder, 347,
 
 300.7, F45.21, Illness Anxiety Disorder, 351,
@@ -5,10 +7,9 @@
 Conversion Disorder
 (Functional Neurological Symptom Disorder) (F44.X) (p. 354 in pdf)
 
-Psychological Factors Affecting Other Medical Conditions
-Diagnostic Criteria 316 (F54) (p 358 in pdf)
+316, F54, Psychological Factors Affecting Other Medical Conditions, 358,
 
-Factitious Disorder
+300.19, F68.10, Factitious Disorder
 Diagnostic Criteria 300.19 (F68.10)
 	Factitious Disorder Imposed on Self
 	Factitious Disorder Imposed on Another (Previously Factitious Disorder by Proxy)
@@ -22,32 +23,29 @@ Related Disorder
 
 Categories:
 -----------------------------
-1. Gender
+1. Gender (0 = male, 1 = female, 2 = nonbinary)
 2. Age
 3. Comorbid (already have disorders)
 4,6,8,10,12,14 Symptoms 1-6
 5,7,9,11,13,15. Persistent? (>6mo) 
 
-Numerical: (* = specify if)
+Numerical:
 ------------------------------
 (SSD)	One or more somatic symptoms that are distressing or result in significant disruption of daily life
 1	Disproportionate and persistent thoughts about the seriousness of one’s symptoms
 2	Persistently high level of anxiety about health or symptoms
 3	Excessive time and energy devoted to somatic symptoms or health concerns
-5	state of being symptomatic is persistent (typically more than 6 months)
-6*	With predominant pain
-7*	Persistent: Severe symptoms, marked impairment, and long duration (more than 6 months)
-8	Preoccupation with having or acquiring a serious illness
-9	No somatic symptoms
-10	Mild somatic symptoms
-11	Preoccupation of developing illness is clearly excessive or disproportionate
-12	There is a high level of anxiety about health, and the individual is easily alarmed about personal health status
-13	Performs excessive health-related behaviors or exhibits maladaptive avoidance
-14	Illness preoccupation has been present for at least 6 months, but the specific illness that is feared may change over that period of time
-15	No symptoms of somatic symptom disorder, panic disorder, generalized anxiety disorder, body dysmorphic disorder, obsessive-compulsive 
-	disorder, or delusional disorder, somatic type.
-16*	Care-seeking type: Medical care, including physician visits or undergoing tests and procedures, is frequently used
-17*	Care-avoidant type: Medical care is rarely used
+4	Predominant pain
+5	Preoccupation with having or acquiring a serious illness
+6	No somatic symptoms
+7	Mild somatic symptoms
+8	Severe somatic symptoms
+9	Preoccupation of developing illness is clearly excessive or disproportionate
+10	There is a high level of anxiety about health, and the individual is easily alarmed about personal health status
+11	Performs excessive health-related behaviors or exhibits maladaptive avoidance
+12	Illness preoccupation has been present for at least 6 months, but the specific illness that is feared may change over that period of time
+**	No symptoms of somatic symptom disorder, panic disorder, generalized anxiety disorder, body dysmorphic disorder, obsessive-compulsive disorder, or delusional disorder, somatic type.
+16	Medical care, including physician visits or undergoing tests and procedures, is frequently used
 18	One or more symptoms of altered voluntary motor or sensory function
 19	Incompatibility between the symptom and recognized neurological or medical conditions
 20	The symptom or deficit is not better explained by another medical or mental disorder
