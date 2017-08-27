@@ -1,11 +1,10 @@
-List differential diagnoses for each disorder
+﻿List differential diagnoses for each disorder
 
 300.82, F45.1, Somatic Symptom Disorder, 347,
 
 300.7, F45.21, Illness Anxiety Disorder, 351,
 
-Conversion Disorder
-(Functional Neurological Symptom Disorder) (F44.X) (p. 354 in pdf)
+300.11, F44.X, Conversion Disorder (Functional Neurological Symptom Disorder), 354,
 
 316, F54, Psychological Factors Affecting Other Medical Conditions, 358,
 
