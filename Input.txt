@@ -8,17 +8,23 @@
 
 316, F54, Psychological Factors Affecting Other Medical Conditions, 358,
 
-300.19, F68.10, Factitious Disorder
-Diagnostic Criteria 300.19 (F68.10)
-	Factitious Disorder Imposed on Self
-	Factitious Disorder Imposed on Another (Previously Factitious Disorder by Proxy)
+300.19, F68.10, Factitious Disorder, 324, 
 
-Other Specified Somatic Symptom and Related Disorder
-300.89 (F45.8) (no input)
+300.89, F45.8, Other Specified Somatic Symptom and Related Disorder
+(no input)
 
 Unspecified Somatic Symptom and
 Related Disorder
 300.82 (F45.9) (no input)
+
+307.7, F98.0, Enuresis, 355,
+307.7, F98.1, Encopresis, 357,
+788.39, N39.498, Other Specified Elimination Disorder (Urinary symptoms), 359,
+787.60, R15.9, Other Specified Elimination Disorder (Fecal Symptoms), 359,
+
+302.6, F64.2, Gender Dysphoria in Children, 452,
+302.85, F64.1, Gender Dysphoria in Adolescents and Adults, 452
+
 
 Categories:
 -----------------------------
@@ -65,3 +71,16 @@ Numerical:
 28	Falsification of physical or psychological signs or symptoms, or induction of injury or disease, in another, associated with 
 	identified deception
 29	The individual presents another individual (victim) to others as ill, impaired, or injured.
+30	Repeated voiding of urine into bed or clothes, whether involuntary or intentional.
+31	Not attributable to the physiological effects of a substance or another medical condition
+32	Repeated passage of feces into inappropriate places, whether involuntary or intentional.
+33	A strong desire to be of the other gender or an insistence that one is the other gender (or some alternative gender different from one’s assigned gender).
+34	In boys (assigned gender), a strong preference for cross-dressing or simulating female attire: or in girls (assigned gender), a strong preference for wearing only typical
+	masculine clothing and a strong resistance to the wearing of typical feminine clothing.
+35	A strong preference for cross-gender roles in make-believe play or fantasy play.
+36	A strong preference for the toys, games, or activities stereotypically used or engaged in by the other gender.
+37	A strong preference for playmates of the other gender.
+38	In boys (assigned gender), a strong rejection of typically masculine toys, games, and activities and a strong avoidance of rough-and-tumble play; or in girls (assigned
+	gender), a strong rejection of typically feminine toys, games, and activities.
+39	A strong dislike of one’s sexual anatomy.
+40	A strong desire for the primary and/or secondary sex characteristics that match one’s experienced gender.
