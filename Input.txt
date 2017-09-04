@@ -84,3 +84,10 @@ Numerical:
 	gender), a strong rejection of typically feminine toys, games, and activities.
 39	A strong dislike of one’s sexual anatomy.
 40	A strong desire for the primary and/or secondary sex characteristics that match one’s experienced gender.
+41	A marked incongruence between one’s experienced/expressed gender and primary and/or secondary sex characteristics (or in young adolescents, the anticipated
+		secondary sex characteristics).
+42	A strong desire to be rid of one’s primary and/or secondary sex characteristics because of a marked incongruence with one’s experienced/expressed gender (or in
+	young adolescents, a desire to prevent the development of the anticipated secondary sex characteristics).
+31,33
+43	A strong desire to be treated as the other gender (or some alternative gender different from one’s assigned gender).
+44	A strong conviction that one has the typical feelings and reactions of the other gender (or some alternative gender different from one’s assigned gender).
