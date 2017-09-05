@@ -1,13 +1,9 @@
 ﻿List differential diagnoses for each disorder
 
 300.82, F45.1, Somatic Symptom Disorder, 347,
-
 300.7, F45.21, Illness Anxiety Disorder, 351,
-
 300.11, F44.X, Conversion Disorder (Functional Neurological Symptom Disorder), 354,
-
 316, F54, Psychological Factors Affecting Other Medical Conditions, 358,
-
 300.19, F68.10, Factitious Disorder, 324, 
 
 300.89, F45.8, Other Specified Somatic Symptom and Related Disorder
@@ -23,8 +19,12 @@ Related Disorder
 787.60, R15.9, Other Specified Elimination Disorder (Fecal Symptoms), 359,
 
 302.6, F64.2, Gender Dysphoria in Children, 452,
-302.85, F64.1, Gender Dysphoria in Adolescents and Adults, 452
+302.85, F64.1, Gender Dysphoria in Adolescents and Adults, 452,
 
+300.14, F44.81, Dissociative Identity Disorder, 292,
+300.12, F44.0, Dissociative Amnesia, 298
+300.6, F48.1, Depersonalization/Derealization Disorder, 302,
+300.15, F44.89, Other Specified Dissociative Disorder, 306
 
 Categories:
 -----------------------------
@@ -91,3 +91,9 @@ Numerical:
 31,33
 43	A strong desire to be treated as the other gender (or some alternative gender different from one’s assigned gender).
 44	A strong conviction that one has the typical feelings and reactions of the other gender (or some alternative gender different from one’s assigned gender).
+45	Disruption of identity characterized by two or more distinct personality states, involving marked discontinuity in sense of self and sense of agency, accompanied
+	by related alterations in affect, behavior, consciousness, memory, perception, cognition, and/or sensory-motor functioning. May be observed by others or reported by the individual.
+46	Recurrent gaps in the recall of everyday events, important personal information, and/or traumatic events that are inconsistent with ordinary forgetting.
+47	The symptoms cause clinically significant distress or impairment in social, occupational, or other important areas of functioning.
+48	The disturbance is not a normal part of a broadly accepted cultural or religious practice.
+49	The symptoms are not attributable to the physiological effects of a substance or another medical condition
