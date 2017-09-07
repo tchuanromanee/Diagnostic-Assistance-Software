@@ -88,7 +88,6 @@ Numerical:
 		secondary sex characteristics).
 42	A strong desire to be rid of one’s primary and/or secondary sex characteristics because of a marked incongruence with one’s experienced/expressed gender (or in
 	young adolescents, a desire to prevent the development of the anticipated secondary sex characteristics).
-31,33
 43	A strong desire to be treated as the other gender (or some alternative gender different from one’s assigned gender).
 44	A strong conviction that one has the typical feelings and reactions of the other gender (or some alternative gender different from one’s assigned gender).
 45	Disruption of identity characterized by two or more distinct personality states, involving marked discontinuity in sense of self and sense of agency, accompanied
@@ -97,3 +96,8 @@ Numerical:
 47	The symptoms cause clinically significant distress or impairment in social, occupational, or other important areas of functioning.
 48	The disturbance is not a normal part of a broadly accepted cultural or religious practice.
 49	The symptoms are not attributable to the physiological effects of a substance or another medical condition
+50	An inability to recall important autobiographical information, usually of a traumatic or stressful nature, that is inconsistent with ordinary forgetting.
+51	Depersonalization: Experiences of unreality, detachment, or being an outside observer with respect to one’s thoughts, feelings, sensations, body, or actions
+52	Derealization: Experiences of unreality or detachment with respect to surroundings
+53	During the depersonalization or derealization experiences, reality testing remains intact.
+31
