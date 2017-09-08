@@ -24,7 +24,18 @@ Related Disorder
 300.14, F44.81, Dissociative Identity Disorder, 292,
 300.12, F44.0, Dissociative Amnesia, 298
 300.6, F48.1, Depersonalization/Derealization Disorder, 302,
-300.15, F44.89, Other Specified Dissociative Disorder, 306
+300.15, F44.89, Other Specified Dissociative Disorder, 306,
+
+313.81, F91.3, Oppositional Defiant Disorder, 462,
+312.34, F63.81, Intermittent Explosive Disorder, 466,
+312.81, F91.9, Conduct Disorder, Childhood-onset type, 469,
+312.82, F91.2, Conduct Disorder, Adolescent-onset type, 469,
+312.89, F91.9, Conduct Disorder, Unspecified Onset (Have therapist specify), 469,
+312.33, F63.1, Pyromania, 476,
+312.32, F63.3, Kleptomania, 478,
+312.89, F91.8, Other Specified Disruptive, Impulse-Control and Conduct Disorder, 479,
+312.9, F91.9, Unspecified Specified Disruptive, Impulse-Control and Conduct Disorder, 480,
+
 
 Categories:
 -----------------------------
@@ -100,4 +111,11 @@ Numerical:
 51	Depersonalization: Experiences of unreality, detachment, or being an outside observer with respect to one’s thoughts, feelings, sensations, body, or actions
 52	Derealization: Experiences of unreality or detachment with respect to surroundings
 53	During the depersonalization or derealization experiences, reality testing remains intact.
-31
+54	Angry/Irritable Mood: Often loses temper
+55	Angry/Irritable Mood: Is often touchy or easily annoyed
+56	Angry/Irritable Mood: Is often angry and resentful
+57	Argumentative/Defiant Behavior: Often argues with authority figures or, for children and adolescents, with adults
+58	Argumentative/Defiant Behavior: Often actively defies or refuses to comply with requests from authority figures or with rules
+59	Argumentative/Defiant Behavior: Often deliberately annoys others
+60	Argumentative/Defiant Behavior: Often blames others for his or her mistakes or misbehavior.
+61	Vindictiveness: Has been spiteful or vindictive at least twice within the past 6 months
