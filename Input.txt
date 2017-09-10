@@ -27,10 +27,12 @@ Related Disorder
 300.15, F44.89, Other Specified Dissociative Disorder, 306,
 
 313.81, F91.3, Oppositional Defiant Disorder, 462,
+
 312.34, F63.81, Intermittent Explosive Disorder, 466,
 312.81, F91.9, Conduct Disorder, Childhood-onset type, 469,
 312.82, F91.2, Conduct Disorder, Adolescent-onset type, 469,
 312.89, F91.9, Conduct Disorder, Unspecified Onset (Have therapist specify), 469,
+
 312.33, F63.1, Pyromania, 476,
 312.32, F63.3, Kleptomania, 478,
 312.89, F91.8, Other Specified Disruptive, Impulse-Control and Conduct Disorder, 479,
@@ -119,3 +121,13 @@ Numerical:
 59	Argumentative/Defiant Behavior: Often deliberately annoys others
 60	Argumentative/Defiant Behavior: Often blames others for his or her mistakes or misbehavior.
 61	Vindictiveness: Has been spiteful or vindictive at least twice within the past 6 months
+62	Deliberate and purposeful fire setting on more than one occasion.
+63	Tension or affective arousal before the act.
+64	Fascination with, interest in, curiosity about, or attraction to fire and its situational contexts
+65	Pleasure, gratification, or relief when setting fires or when witnessing or participating in their aftermath.
+66	The fire setting is not done for monetary gain, as an expression of sociopolitical ideology,
+	to conceal criminal activity, to express anger or vengeance, to improve one’s living circumstances, in response to a delusion or hallucination, or as a result of impaired judgment
+67	Recurrent failure to resist impulses to steal objects tliat are not needed for personal use or for their monetary value
+68	Increasing sense of tension immediately before committing the theft
+69	Pleasure, gratification, or relief at the time of committing the theft.
+70	The stealing is not committed to express anger or vengeance and is not in response to a delusion or a hallucination
