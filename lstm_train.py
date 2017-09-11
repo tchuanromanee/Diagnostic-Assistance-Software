@@ -9,7 +9,7 @@ import csv
 import random
 
 max_features = 20000
-maxlen = 80 # cut text after this number of words
+#maxlen = 80 # cut text after this number of words
 batch_size = 32
 
 print('loading data...')
