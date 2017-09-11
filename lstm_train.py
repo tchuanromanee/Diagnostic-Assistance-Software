@@ -26,23 +26,12 @@ test_data = trainingSet[250:]
 training_feats = [featSet[:len(featSet)-1] for featSet in train_data]
 training_labels = [labelSet[len(labelSet)-1] for labelSet in train_data]
 	
-print(training_feats)
+
+testing_feats = [featSet[:len(featSet)-1] for featSet in test_data]
+testing_labels = [labelSet[len(labelSet)-1] for labelSet in test_data]
 print('labels')
-print(training_labels)
-#labels = trainingSet.ix[:,0].values.astype('int32')
-
-#(x_train, y_train), (x_test, y_test) = load_data(num_words=max_features)
-#print(len(x_train), 'train sequences')
-#print(len(x_test), 'test sequences')
-
-#print('Pad sequences (xamples x time)')
-#x_train = sequence.pad_sequences(x_train, maxlen=maxlen)
-#x_test = sequence.pad_sequences(x_test, maxlen=maxlen)
-#print('x_train shape:', x_train.shape)
-#print('x_test shape:', x_test.shape)
 
 # Train dataset
-
 
 print('Build model...')
 model = Sequential()
@@ -54,7 +43,7 @@ model.add(Dense(1, activation='sigmoid'))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 print('Train...')
-model.fit(x_train, y_train, batch_size=batch_size, epochs=15, validation_data=(x_test, y_test))
-score, acc = model.evaluate(x_test, y_test, batch_size=batch_size)
+model.fit(training_feats, training_labels, batch_size=batch_size, epochs=5, validation_data=(testing_feats, testing_labels))
+score, acc = model.evaluate(testing_feats,testing_labels, batch_size=batch_size)
 print('Test score:', score)
 print('Test accuracy:', acc)
