@@ -44,7 +44,30 @@ Related Disorder
 319, F73, Intellectual Disability (Intellectual Developmental Disorder) - Profound, 33
 315.8, F88, Global Developmental Delay, 41,
 319, F79, Unspecified Intellectual Disability (Intellectual Developmental Disorder), 41,
-
+315.39, F80.9, Language Disorder, 42,
+315.39, F80.0, Speech Sound Disorder, 44,
+315.35, F80.81, Childhood-Onset Fluency Disorder (Stuttering), 45,
+315.39, F80.89, Social (Pragmatic) Communication Disorder, 47,
+307.9, F80.9, Unspecified Communication Disorder, 49,
+299.00, F84.0, Autism Spectrum Disorder, 50,
+293.89, F06.1, Autism Spectrum Disorder with Catatonia, 50,
+314.01, F90.2, Attention-Deficit/Hyperactivity Disorder - Combined Presentation, 59,
+314.00, F90.0, Attention-Deficit/Hyperactivity Disorder - Predominantly Inattentive Presentation, 59,
+314.01, F90.1, Attention-Deficit/Hyperactivity Disorder - Predominantly Hyperactive/Impulsive Presentation, 59,
+314.01, F90.8, Other Specified Attention-Deficit/Hyperactivity Disorder, 65,
+314.01, F90.9, Unspecified Attention-Deficit/Hyperactivity Disorder, 66,
+315.00, F81.0, Specific Learning Disorder - With impairment in reading, 66,
+315.2, F81.81, Specific Learning Disorder - With impairment in written expression, 66,
+315.1, F81.2, Specific Learning Disorder - With impairment in mathematics, 66,
+315.4, F82, Developmental Coordination Disorder, 74,
+307.3, F98.4, Stereotypic Movement Disorder, 77,
+307.23, F95.2, Tourette's Disorder, 81,
+307.22, F95.1, Persistent (Chronic) Motor or Vocal Tic Disorder, 81,
+307.21, F95.0, Provisional Tic Disorder, 81,
+307.20, F95.8, Other Specified Tic Disorder, 85,
+307.20, F95.9, Unspecified Tic Disorder, 85,
+315.8, F88, Other Specified Neurodevelopmental Disorder, 86,
+315.9, F89, Unspecified Neurodevelopmental Disorder, 86,
 
 
 Categories:
