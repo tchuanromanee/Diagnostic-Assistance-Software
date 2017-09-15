@@ -1,5 +1,5 @@
 #from __future__ import print_funtion
-
+import keras
 from keras.preprocessing import sequence
 from keras.models import Sequential
 from keras.layers import Dense, Embedding
@@ -25,12 +25,22 @@ test_data = trainingSet[250:]
 
 
 training_feats = [featSet[:len(featSet)-1] for featSet in train_data]
+# Extract training labels
 training_labels = [labelSet[len(labelSet)-1] for labelSet in train_data]
-	
+# Convert labels to int for classification
+training_ints = [int(float(i) * 100) for i in training_labels]
+# Preprocess categical labels
+training_labels = keras.utils.to_categorical(training_ints, num_classes=None)	
 
 testing_feats = [featSet[:len(featSet)-1] for featSet in test_data]
+# Extract testing labels
 testing_labels = [labelSet[len(labelSet)-1] for labelSet in test_data]
+# Convert labels (ICD9 codes) to int for clasification
+testing_ints = [int(float(i) * 100) for i in testing_labels]
+testing_labels = keras.utils.to_categorical(testing_ints, num_classes=None)
+
 print('labels')
+
 
 # Train dataset
 
