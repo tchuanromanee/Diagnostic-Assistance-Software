@@ -38,6 +38,14 @@ Related Disorder
 312.89, F91.8, Other Specified Disruptive, Impulse-Control and Conduct Disorder, 479,
 312.9, F91.9, Unspecified Specified Disruptive, Impulse-Control and Conduct Disorder, 480,
 
+319, F70, Intellectual Disability (Intellectual Developmental Disorder) - Mild, 33,
+319, F71, Intellectual Disability (Intellectual Developmental Disorder) - Moderate, 33
+319, F72, Intellectual Disability (Intellectual Developmental Disorder) - Severe, 33
+319, F73, Intellectual Disability (Intellectual Developmental Disorder) - Profound, 33
+315.8, F88, Global Developmental Delay, 41,
+319, F79, Unspecified Intellectual Disability (Intellectual Developmental Disorder), 41,
+
+
 
 Categories:
 -----------------------------
