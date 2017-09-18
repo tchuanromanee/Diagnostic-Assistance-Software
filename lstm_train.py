@@ -51,7 +51,7 @@ model.add(LSTM(128, dropout=0.2, recurrent_dropout=0.2))
 model.add(Dense(1, activation='sigmoid'))
 
 # try using different optimizers and different optimizer configs
-model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer='RMSprop', metrics=['accuracy'])
 
 print('Train...')
 model.fit(training_feats, training_labels, batch_size=batch_size, epochs=10, validation_data=(testing_feats, testing_labels))
