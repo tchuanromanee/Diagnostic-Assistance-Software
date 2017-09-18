@@ -11,7 +11,7 @@ from keras import metrics
 
 max_features = 20000
 #maxlen = 80 # cut text after this number of words
-batch_size = 32
+batch_size = 50
 
 print('loading data...')
 
@@ -54,7 +54,7 @@ model.add(Dense(1, activation='sigmoid'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 print('Train...')
-model.fit(training_feats, training_labels, batch_size=batch_size, epochs=5, validation_data=(testing_feats, testing_labels))
+model.fit(training_feats, training_labels, batch_size=batch_size, epochs=10, validation_data=(testing_feats, testing_labels))
 score, acc = model.evaluate(testing_feats,testing_labels, batch_size=batch_size)
 print('Test score:', score)
 print('Test accuracy:', acc)
