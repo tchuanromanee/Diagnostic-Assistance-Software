@@ -68,7 +68,20 @@ Related Disorder
 307.20, F95.9, Unspecified Tic Disorder, 85,
 315.8, F88, Other Specified Neurodevelopmental Disorder, 86,
 315.9, F89, Unspecified Neurodevelopmental Disorder, 86,
-
+301.22, F21, Schizotypal (Personality) Disorder, 90,
+297.1, F22, Delusional Disorder, 90,
+298.8, F23, Brief Psychotic Disorder, 94,
+295.40, F20.81, Schizophreniform Disorder, 96,
+295.50, F20.9, Schizophrenia, 99,
+295.70, F25.0, Schizoaffective Disorder - Bipolar Type, 105,
+295.70, F25.1, Schizoaffective Disorder - Depressive Type, 105,
+293.81, F06.2, Psychotic Disorder Due to Another Medical Condition - With delusions, 115,
+293.82, F06.0, Psychotic Disorder Due to Another Medical Condition - With hallucinations, 115,
+293.89, F06.1, Catatonia Associated With Another Mental Disorder (Catatonia Specifier), 119,
+293.89, F06.1, Catatonic Disorder Due to Another Medical Condition, 120,
+293.89, F06.1, Unspecified Catatonia, 121,
+298.8, F28, Other Specified Schizophrenia Spectrum and Other Psychotic Disorder, 122,
+298.9, F29, Unspecified Schizophrenia Spectrum and Other Psychotic Disorder, 122,
 
 Categories:
 -----------------------------
