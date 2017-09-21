@@ -2,16 +2,17 @@
 import keras
 from keras.preprocessing import sequence
 from keras.models import Sequential
-from keras.layers import Dense, Embedding
+from keras.layers import Dense, Embedding, Flatten, Dropout
 from keras.layers import LSTM
 from keras.datasets import imdb
 import csv
 import random
 from keras import metrics
+from numpy import asarray
 
 max_features = 20000
 #maxlen = 80 # cut text after this number of words
-batch_size = 50
+batch_size = 250
 
 print('loading data...')
 
@@ -25,6 +26,7 @@ test_data = trainingSet[250:]
 
 
 training_feats = [featSet[:len(featSet)-1] for featSet in train_data]
+
 # Extract training labels
 training_labels = [labelSet[len(labelSet)-1] for labelSet in train_data]
 # Convert labels to int for classification
@@ -39,16 +41,37 @@ testing_labels = [labelSet[len(labelSet)-1] for labelSet in test_data]
 testing_ints = [int(float(i) * 100) for i in testing_labels]
 testing_labels = keras.utils.to_categorical(testing_ints, num_classes=None)
 
-print('labels')
+# Convert to numpy arrays
+training_feats = asarray(training_feats)
+training_labels = asarray(training_labels)
+testing_feats = asarray(testing_feats)
+testing_labels = asarray(testing_labels)
+
+
+num_features = training_feats.shape[1]
 
 
 # Train dataset
 
 print('Build model...')
 model = Sequential()
-model.add(Embedding(max_features, 128))
-model.add(LSTM(128, dropout=0.2, recurrent_dropout=0.2))
-model.add(Dense(1, activation='sigmoid'))
+#model.add(Embedding(max_features, 128))
+#model.add(LSTM(128,input_dim = num_features, dropout=0.2, recurrent_dropout=0.2))
+#model.add(Dense(2, activation='sigmoid'))
+#model.add(Dense(128, input_dim = num_features))
+
+## Curent testing
+#model.add(LSTM(75, input_shape = (len(training_feats), num_features), dropout=0.2, return_sequences=True))
+#model.add(Embedding(128,15))
+#model.add(Dropout(0.5))
+#model.add(LSTM(78840, dropout=0.2, recurrent_dropout=0.2))
+
+model.add(Dense(78840, input_shape=(15,)))
+#model.add(Dropout(0.5))
+#model.add(LSTM(50, return_sequences=True))
+#model.add(Flatten())
+#model.add(Dense(78840))
+
 
 # try using different optimizers and different optimizer configs
 model.compile(loss='categorical_crossentropy', optimizer='RMSprop', metrics=['accuracy'])
