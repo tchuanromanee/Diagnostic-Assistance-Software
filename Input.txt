@@ -169,6 +169,17 @@
 300.19, F68.10, Factitious Disorder, 324, 
 300.89, F45.8, Other Specified Somatic Symptom and Related Disorder, 327,
 300.82, F45.9, Unspecified Somatic Symptom and Related Disorder, 327,
+307.52, F98.3, Pica - In children, 329,
+307.52, F50.8, Pica - In adults, 329,
+307.53, F98.21, Rumination Disorder, 332,
+307.59, F50.8, Avoidant/Restrictive Food Intake Disorder, 334,
+307.1, F50.01, Anorexia Nervosa - Restricting type, 338,
+307.1, F50.02, Anorexia Nervosa - Binge-eating/purging type, 338,
+307.51, F50.2, Bulimia Nervosa, 345,
+307.51, F50.8, Binge-Eating Disorder, 350,
+307.59, F50.8, Other Specified Feeding or Eating Disorder, 353,
+307.50, F50.9, Unspecified Feeding or Eating Disorder, 354,
+
 
 Categories:
 -----------------------------
