@@ -1,10 +1,5 @@
 ﻿List differential diagnoses for each disorder
 
-307.7, F98.0, Enuresis, 355,
-307.7, F98.1, Encopresis, 357,
-788.39, N39.498, Other Specified Elimination Disorder (Urinary symptoms), 359,
-787.60, R15.9, Other Specified Elimination Disorder (Fecal Symptoms), 359,
-
 302.6, F64.2, Gender Dysphoria in Children, 452,
 302.85, F64.1, Gender Dysphoria in Adolescents and Adults, 452,
 
@@ -179,7 +174,12 @@
 307.51, F50.8, Binge-Eating Disorder, 350,
 307.59, F50.8, Other Specified Feeding or Eating Disorder, 353,
 307.50, F50.9, Unspecified Feeding or Eating Disorder, 354,
-
+307.7, F98.0, Enuresis, 355,
+307.7, F98.1, Encopresis, 357,
+788.39, N39.498, Other Specified Elimination Disorder - With urinary symptoms, 359,
+787.60, R15.9, Other Specified Elimination Disorder - With fecal Symptoms, 359,
+788.30, R32, Unspecified Elimination Disorder - With urinary symptoms, 360,
+787.60, R15.9, Unspecified Elimination Disorder - With fecal symptoms, 360,
 
 Categories:
 -----------------------------
