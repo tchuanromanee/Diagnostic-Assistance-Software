@@ -1,18 +1,5 @@
 ﻿List differential diagnoses for each disorder
 
-300.82, F45.1, Somatic Symptom Disorder, 347,
-300.7, F45.21, Illness Anxiety Disorder, 351,
-300.11, F44.X, Conversion Disorder (Functional Neurological Symptom Disorder), 354,
-316, F54, Psychological Factors Affecting Other Medical Conditions, 358,
-300.19, F68.10, Factitious Disorder, 324, 
-
-300.89, F45.8, Other Specified Somatic Symptom and Related Disorder
-(no input)
-
-Unspecified Somatic Symptom and
-Related Disorder
-300.82 (F45.9) (no input)
-
 307.7, F98.0, Enuresis, 355,
 307.7, F98.1, Encopresis, 357,
 788.39, N39.498, Other Specified Elimination Disorder (Urinary symptoms), 359,
@@ -20,11 +7,6 @@ Related Disorder
 
 302.6, F64.2, Gender Dysphoria in Children, 452,
 302.85, F64.1, Gender Dysphoria in Adolescents and Adults, 452,
-
-300.14, F44.81, Dissociative Identity Disorder, 292,
-300.12, F44.0, Dissociative Amnesia, 298
-300.6, F48.1, Depersonalization/Derealization Disorder, 302,
-300.15, F44.89, Other Specified Dissociative Disorder, 306,
 
 313.81, F91.3, Oppositional Defiant Disorder, 462,
 
@@ -155,8 +137,38 @@ Related Disorder
 294.8, F06.8, Obsessive-Compulsive and Related Disorder Due to Another Medical Condition, 260,
 300.3, F42, Other Specified Obsessive-Compulsive and Related Disorder, 263,
 300.3, F42, Unspecified Obsessive-Compulsive and Related Disorder, 264,
-
-
+313.89, F94.1, Reactive Attachment Disorder, 265,
+313.89, F94.2, Disinhibited Social Engagement Disorder, 268,
+309.81, F43.10, Posttraumatic Stress Disorder (includes Posttraumatic Stress Disorder for Children 6 Years and Younger), 271,
+308.3, F43.0, Acute Stress Disorder, 280,
+309.0, F43.21, Adjustment Disorder - With depressed mood, 286,
+309.24, F43.22, Adjustment Disorder - With anxiety, 286,
+309.28, F43.23, Adjustment Disorder - With mixed anxiety and depressed mood, 286,
+309.3, F43.24, Adjustment Disorder - With disturbance of conduct, 286,
+309.4, F43.25, Adjustment Disorder - With mixed disturbance of emotions and conduct, 286,
+309.9, F43.20, Adjustment Disorder - Unspecified, 286,
+309.89, F43.8, Other Specified Trauma- and Stressor-Related Disorder, 289,
+309.9, F43.9, Unspecified Trauma- and Stressor-Related Disorder, 290,
+300.14, F44.81, Dissociative Identity Disorder, 292,
+300.12, F44.0, Dissociative Amnesia, 298
+300.6, F48.1, Depersonalization/Derealization Disorder, 302,
+300.15, F44.89, Other Specified Dissociative Disorder, 306,
+300.14, F44.9, Unspecified Dissociative Disorder, 307,
+300.82, F45.1, Somatic Symptom Disorder, 311,
+300.7, F45.21, Illness Anxiety Disorder, 315,
+300.11, F44.X, Conversion Disorder (Functional Neurological Symptom Disorder), 318,
+300.11, F44.4, Conversion Disorder (Functional Neurological Symptom Disorder) - With weakness or paralysis, 318,
+300.11, F44.4, Conversion Disorder (Functional Neurological Symptom Disorder) - With abnormal movement, 318,
+300.11, F44.4, Conversion Disorder (Functional Neurological Symptom Disorder) - With swallowing symptoms, 318,
+300.11, F44.4, Conversion Disorder (Functional Neurological Symptom Disorder) - With speech symptom, 318,
+300.11, F44.5, Conversion Disorder (Functional Neurological Symptom Disorder) - With attacks or seizures, 318,
+300.11, F44.6, Conversion Disorder (Functional Neurological Symptom Disorder) - With anesthesia or sensory loss, 318,
+300.11, F44.6, Conversion Disorder (Functional Neurological Symptom Disorder) - With special sensory symptom, 318,
+300.11, F44.7, Conversion Disorder (Functional Neurological Symptom Disorder) - With mixed symptoms, 318,
+316, F54, Psychological Factors Affecting Other Medical Conditions, 322,
+300.19, F68.10, Factitious Disorder, 324, 
+300.89, F45.8, Other Specified Somatic Symptom and Related Disorder, 327,
+300.82, F45.9, Unspecified Somatic Symptom and Related Disorder, 327,
 
 Categories:
 -----------------------------
