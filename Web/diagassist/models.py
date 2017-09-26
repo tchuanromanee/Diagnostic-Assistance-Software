@@ -3,7 +3,8 @@ from django.utils import timezone
 
 import datetime
 
-# Create your models here.
+
+
 class Diagnoses(models.Model):
     diagID = models.AutoField(primary_key=True)
     ICD9 = models.DecimalField(max_digits=6, decimal_places=2)
@@ -15,6 +16,11 @@ class Diagnoses(models.Model):
     # def was_published_recently(self):
     #     return self.pub_date >= timezone.now() - datetime.timedelta(days=1c
 
+	
+class Comorbidity(models.Model):
+	comorbID = models.AutoField(primary_key=True)
+	diagID = models.ForeignKey(Diagnoses, on_delete=models.CASCADE)
+	description = models.CharField(max_length=500)
 	
 class  Diagsymp(models.Model): # Relates which diagnoses has which symptoms
 	linkID = models.AutoField(primary_key=True)
