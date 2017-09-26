@@ -1,20 +1,5 @@
 ﻿List differential diagnoses for each disorder
 
-302.6, F64.2, Gender Dysphoria in Children, 452,
-302.85, F64.1, Gender Dysphoria in Adolescents and Adults, 452,
-
-313.81, F91.3, Oppositional Defiant Disorder, 462,
-
-312.34, F63.81, Intermittent Explosive Disorder, 466,
-312.81, F91.9, Conduct Disorder, Childhood-onset type, 469,
-312.82, F91.2, Conduct Disorder, Adolescent-onset type, 469,
-312.89, F91.9, Conduct Disorder, Unspecified Onset (Have therapist specify), 469,
-
-312.33, F63.1, Pyromania, 476,
-312.32, F63.3, Kleptomania, 478,
-312.89, F91.8, Other Specified Disruptive, Impulse-Control and Conduct Disorder, 479,
-312.9, F91.9, Unspecified Specified Disruptive, Impulse-Control and Conduct Disorder, 480,
-
 319, F70, Intellectual Disability (Intellectual Developmental Disorder) - Mild, 33,
 319, F71, Intellectual Disability (Intellectual Developmental Disorder) - Moderate, 33
 319, F72, Intellectual Disability (Intellectual Developmental Disorder) - Severe, 33
@@ -210,8 +195,29 @@
 780.54, G47.10, Unspecified Hypersomnolence Disorder, 421,
 780.59, G47.8, Other Specified Sleep-Wake Disorder, 421,
 780.59, G47.9, Unspecified Sleep-Wake Disorder, 422,
-
-
+302.74, F52.32, Delayed Ejaculation, 424,
+302.72, F52.21, Erectile Disorder, 426,
+302.73, F52.31, Female Orgasmic Disorder, 429,
+302.72, F52.22, Female Sexual Interest/Arousal Disorder, 433,
+302.76, F52.6, Genito-Pelvic Pain/Penetration Disorder, 437,
+302.71, F52.0, Male Hypoactive Sexual Desire Disorder, 440,
+302.75, F52.4, Premature (Early) Ejaculation, 443,
+302.79, F52.8, Other Specified Sexual Dysfunction, 450,
+302.70, F52.9, Unspecified Sexual Dysfunction, 450,
+302.6, F64.2, Gender Dysphoria in Children, 452,
+302.85, F64.1, Gender Dysphoria in Adolescents and Adults, 452,
+302.6, F64.8, Other Specified Gender Dysphoria, 459,
+302.6, F64.9, Unspecified Gender Dysphoria, 459,
+313.81, F91.3, Oppositional Defiant Disorder, 462,
+312.34, F63.81, Intermittent Explosive Disorder, 466,
+312.81, F91.9, Conduct Disorder - Childhood-onset type, 469,
+312.82, F91.2, Conduct Disorder - Adolescent-onset type, 469,
+312.89, F91.9, Conduct Disorder - Unspecified Onset, 469,
+301.7, F60.2, Antisocial Personality Disorder, 476,
+312.33, F63.1, Pyromania, 476,
+312.32, F63.3, Kleptomania, 478,
+312.89, F91.8, Other Specified Disruptive, Impulse-Control and Conduct Disorder, 479,
+312.9, F91.9, Unspecified Specified Disruptive, Impulse-Control and Conduct Disorder, 480,
 
 Categories:
 -----------------------------
