@@ -10,7 +10,7 @@ class Diagnoses(models.Model):
     diagID = models.AutoField(primary_key=True)
     ICD9 = models.DecimalField(max_digits=6, decimal_places=2)
     ICD10 = models.CharField(max_length=6)
-    page = models.IntegerField()
+    page = models.PositiveIntegerField()
     name = models.CharField(max_length=70)
     def __str__(self):
         return self.name
@@ -50,10 +50,9 @@ class Symptoms(models.Model):
 
 class Therapist(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
-	numPatients = models.IntegerField()
+	numPatients = models.PositiveIntegerField()
 	phone = models.IntegerField()
 
-	
 @receiver(post_save, sender=User)
 def create_therapist(sender, instance, created, **kwargs):
     if created:
@@ -62,3 +61,10 @@ def create_therapist(sender, instance, created, **kwargs):
 @receiver(post_save, sender=User)
 def save_therapist(sender, instance, **kwargs):
     instance.therapist.save()
+
+	
+class Client(models.Model):
+	clientID = models.AutoField(primary_key=True)
+	clientNumber = models.CharField(max_length=10)
+	age = models.PositiveIntegerField()
+	gender = models.CharField(max_length=1)
