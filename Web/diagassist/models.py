@@ -1,8 +1,9 @@
 from django.db import models
 from django.utils import timezone
-
+from django.contrib.auth.models import AbstractUser, User
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 import datetime
-
 
 
 class Diagnoses(models.Model):
@@ -46,9 +47,18 @@ class DiffDiag(models.Model): # Relates each diagnosis to a differential diagnos
 class Symptoms(models.Model):
 	sympID = models.AutoField(primary_key=True)
 	name = models.CharField(max_length=500)
-# class Choice(models.Model):
-#     diagnosis = models.ForeignKey(Diagnoses, on_delete=models.CASCADE)
-#     choice_text = models.CharField(max_length=200)
-#     votes = models.IntegerField(default=0)
-#     def __str__(self):
-#         return self.choice_text
+
+class Therapist(models.Model):
+	user = models.OneToOneField(User, on_delete=models.CASCADE)
+	numPatients = models.IntegerField()
+	phone = models.IntegerField()
+
+	
+@receiver(post_save, sender=User)
+def create_therapist(sender, instance, created, **kwargs):
+    if created:
+        Therapist.objects.create(user=instance)
+
+@receiver(post_save, sender=User)
+def save_therapist(sender, instance, **kwargs):
+    instance.therapist.save()
