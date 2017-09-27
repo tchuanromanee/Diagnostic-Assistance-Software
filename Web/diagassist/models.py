@@ -6,7 +6,7 @@ from django.dispatch import receiver
 import datetime
 
 
-class Diagnoses(models.Model):
+class Diagnostic(models.Model):
     diagID = models.AutoField(primary_key=True)
     ICD9 = models.DecimalField(max_digits=6, decimal_places=2)
     ICD10 = models.CharField(max_length=6)
@@ -20,12 +20,12 @@ class Diagnoses(models.Model):
 	
 class Comorbidity(models.Model):
 	comorbID = models.AutoField(primary_key=True)
-	diagID = models.ForeignKey(Diagnoses, on_delete=models.CASCADE)
+	diagID = models.ForeignKey(Diagnostic, on_delete=models.CASCADE)
 	description = models.CharField(max_length=500)
 	
 class  Diagsymp(models.Model): # Relates which diagnoses has which symptoms
 	linkID = models.AutoField(primary_key=True)
-	diagID = models.ForeignKey(Diagnoses, on_delete=models.CASCADE)
+	diagID = models.ForeignKey(Diagnostic, on_delete=models.CASCADE)
 	symp1 = models.IntegerField()
 	prevalent1 = models.BooleanField()
 	symp2 = models.IntegerField()
@@ -41,8 +41,8 @@ class  Diagsymp(models.Model): # Relates which diagnoses has which symptoms
 
 class DiffDiag(models.Model): # Relates each diagnosis to a differential diagnostic
 	diffID = models.AutoField(primary_key=True)
-	diagnosis = models.ForeignKey(Diagnoses, on_delete=models.CASCADE, related_name='diagnosis')
-	differentialDiagnosis = models.ForeignKey(Diagnoses, on_delete=models.CASCADE, related_name='differentialDiagnosis')
+	diagnosis = models.ForeignKey(Diagnostic, on_delete=models.CASCADE, related_name='diagnosis')
+	differentialDiagnosis = models.ForeignKey(Diagnostic, on_delete=models.CASCADE, related_name='differentialDiagnosis')
 
 class Symptoms(models.Model):
 	sympID = models.AutoField(primary_key=True)
