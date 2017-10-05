@@ -9,9 +9,9 @@ import datetime
 class Diagnostic(models.Model):
     diagID = models.AutoField(primary_key=True)
     ICD9 = models.DecimalField(max_digits=6, decimal_places=2)
-    ICD10 = models.CharField(max_length=6)
+    ICD10 = models.CharField(max_length=10)
     page = models.PositiveIntegerField()
-    name = models.CharField(max_length=70)
+    name = models.CharField(max_length=150)
     def __str__(self):
         return self.name
     # def was_published_recently(self):
@@ -44,7 +44,7 @@ class DiffDiag(models.Model): # Relates each diagnosis to a differential diagnos
 	diagnosis = models.ForeignKey(Diagnostic, on_delete=models.CASCADE, related_name='diagnosis')
 	differentialDiagnosis = models.ForeignKey(Diagnostic, on_delete=models.CASCADE, related_name='differentialDiagnosis')
 
-class Symptoms(models.Model):
+class Symptom(models.Model):
 	sympID = models.AutoField(primary_key=True)
 	name = models.CharField(max_length=500)
 
@@ -66,5 +66,16 @@ def save_therapist(sender, instance, **kwargs):
 class Client(models.Model):
 	clientID = models.AutoField(primary_key=True)
 	clientNumber = models.CharField(max_length=10)
+	therapistID = models.ForeignKey(Therapist, on_delete=models.CASCADE, default=-1)
 	age = models.PositiveIntegerField()
 	gender = models.CharField(max_length=1)
+
+class Preexisting(models.Model): # Links clients to preexisting diosrders
+	preexistingID = models.AutoField(primary_key=True)
+	clientID = models.ForeignKey(Client, on_delete=models.CASCADE)
+	diagID = models.ForeignKey(Diagnostic, on_delete=models.CASCADE)
+
+class ClientSymptom(models.Model): # Links clients to their symptoms
+	clientSympID = models.AutoField(primary_key=True)
+	clientID = models.ForeignKey(Client, on_delete=models.CASCADE)
+	sympID = models.ForeignKey(Symptom, on_delete=models.CASCADE)
