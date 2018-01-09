@@ -58,9 +58,13 @@ def create_therapist(sender, instance, created, **kwargs):
     if created:
         Therapist.objects.create(user=instance)
 
-@receiver(post_save, sender=User)
-def save_therapist(sender, instance, **kwargs):
-    instance.therapist.save()
+# Commented this out to allow loggin gin
+#def save_therapist(sender, instance, **kwargs):
+ #   try:
+#		instance.therapist.save()
+#	except ObjectDoesNotExist:
+#		print("nn")
+		# profile = Profile(user=request.user)
 
 	
 class Client(models.Model):
