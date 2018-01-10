@@ -10,7 +10,7 @@
     <a class = "nav" href = "login">Log in</a>
   </div>
   <div id="app">
-    {{ message }}
+    [[ message ]]
   </div>
   <div id="app-2">
 	<span v-bind:title="message">
@@ -24,18 +24,18 @@
   <div id="app-4">
 	<ol>
 		<li v-for="todo in todos">
-			{{ todo.text}}
+			[[ todo.text]]
 		</li>
 	</ol>
   </div>
 
   <div id="app-5">
-	<p>{{ message }}</p>
+	<p>[[ message ]]</p>
 	<button v-on:click="reverseMessage">Reverse Message</button>
   </div>
 
   <div id="app-6">
-	<p>{{ message }}</p>
+	<p>[[ message ]]</p>
 	<input v-model="message">
   </div>
 
@@ -55,24 +55,28 @@
   </div>
   <script>
     var app = new Vue({
+      delimiters: ['[[', ']]'],
       el: '#app',
       data: {
         message: 'Hello you!'
       }
     })
 	var app2 = new Vue({
+    delimiters: ['[[', ']]'],
 		el: '#app-2',
 		data: {
 			message: 'You loaded this page on ' + new Date().toLocaleString()
 		}
 	})
 	var app3 = new Vue({
+    delimiters: ['[[', ']]'],
 		el: '#app-3',
 		data: {
 			seen: true
 		}
 	})
 	var app4 = new Vue({
+    delimiters: ['[[', ']]'],
 		el:'#app-4',
 		data: {
 			todos: [
@@ -83,6 +87,7 @@
 		}
 	})
 	var app5 = new Vue({
+    delimiters: ['[[', ']]'],
 		el: '#app-5',
 		data: {
 			message: 'Hello Vue.js!'
@@ -94,6 +99,7 @@
 		}
 	})
 	var app6 = new Vue({
+    delimiters: ['[[', ']]'],
 		el: '#app-6',
 		data: {
 			message: 'Hello Vue!'
@@ -107,6 +113,7 @@
 	})
 
 	var app7 = new Vue({
+    delimiters: ['[[', ']]'],
 		el: '#app-7',
 		data: {
 			groceryList: [
