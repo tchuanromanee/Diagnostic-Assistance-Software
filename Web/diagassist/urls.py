@@ -4,9 +4,11 @@ from . import views
 app_name = 'diagassist'
 urlpatterns = [
     # ex: /diagassist/
-	url(r'^$', views.indexView, name='main-view'),
+	url(r'^$', views.indexView, name='index-view'),
      # ex: /diagassist/signup/
-    url(r'^signup/$', views.signupView, name='signup')
+    url(r'^signup/$', views.signupView, name='signup-view'),
+	# ex: /diagassist/login/
+    url(r'^login/$', views.loginView, name='login-view')
     # ex: /polls/5/results/
     #url(r'^(?P<pk>[0-9]+)/results/$', views.ResultsView.as_view(), name='results'),
     # ex: /polls/5/vote/
