@@ -8,11 +8,20 @@ from django.utils import timezone
 from .models import Therapist, Symptom, Diagnostic
 
 
-class IndexView(generic.ListView):
-	template_name = 'index.html'
+# class IndexView(generic.ListView):
+# return HttpResponse(html)
 
-def indexss(request):
-    return render(request, 'index.html')
+def indexView(request):
+	template_name = 'index.html'
+	return render(request, template_name)
+	
+def loginView(request):
+	template_name = 'login.html'
+	return render(request, template_name)
+	
+def signupView(request):
+	template_name = 'signup.html'
+	return render(request, template_name)
 
 # Create your views here.
 def update_profile(request, user_id):

@@ -3,13 +3,10 @@ from django.conf.urls import url
 from . import views
 app_name = 'diagassist'
 urlpatterns = [
-    # ex: /polls/
-    #url(r'^$', views.index, name='index'),
-    # ex: /polls/
-	url(r'^$', views.indexss, name='main-view')
-    #url(r'^$', views.IndexView.as_view(), name='index'),
-        # ex: /polls/5/
-    #url(r'^(?P<pk>[0-9]+)/$', views.DetailView.as_view(), name='detail'),
+    # ex: /diagassist/
+	url(r'^$', views.indexView, name='main-view'),
+     # ex: /diagassist/signup/
+    url(r'^signup/$', views.signupView, name='signup')
     # ex: /polls/5/results/
     #url(r'^(?P<pk>[0-9]+)/results/$', views.ResultsView.as_view(), name='results'),
     # ex: /polls/5/vote/
