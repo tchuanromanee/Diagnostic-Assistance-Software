@@ -1,7 +1,10 @@
-<h1>Sign up</h1>
-
+{% extends 'base.html' %}
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-<form method = "post">
-Get the polls vote thing from details view in polls project
-<input type="submit" value="Submit" />
-</form>
+{% block content %}
+  <h2>Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+  </form>
+{% endblock %}

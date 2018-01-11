@@ -1,9 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
+from django.contrib.auth import login, authenticate
+from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 from .models import Therapist, Symptom, Diagnostic
 

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diagnostic Assistance Software</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id = "navigation">
+    <a class = "nav" href = "signup">Sign up</a> &nbsp;
+    <a class = "nav" href = "login">Log in</a>
+  </div>
+  <div id="app">
+    [[ message ]]
+  </div>
+  <div id="app-2">
+	<span v-bind:title="message">
+		Hover your mose over me for a few secs to see my dynamically bound titie!
+	</span>
+  </div>
+  <div id="app-3">
+	<p v-if="seen">Now you see me</p>
+  </div>
+
+  <div id="app-4">
+	<ol>
+		<li v-for="todo in todos">
+			[[ todo.text]]
+		</li>
+	</ol>
+  </div>
+
+  <div id="app-5">
+	<p>[[ message ]]</p>
+	<button v-on:click="reverseMessage">Reverse Message</button>
+  </div>
+
+  <div id="app-6">
+	<p>[[ message ]]</p>
+	<input v-model="message">
+  </div>
+
+  <div id="app-7">
+		<ol>
+			<!--
+				Now we provide each todo-item with the todo object it's representing,
+				so that its content can be dynamic. We also need to provide each
+				component with a "key" which will be explained later.
+			-->
+			<todo-item
+				v-for="item in groceryList"
+				v-bind:todo="item"
+				v-bind:key="item.id">
+			</todo-item>
+		</ol>
+  </div>
+  <script>
+    var app = new Vue({
+      delimiters: ['[[', ']]'],
+      el: '#app',
+      data: {
+        message: 'Hello you!'
+      }
+    })
+	var app2 = new Vue({
+    delimiters: ['[[', ']]'],
+		el: '#app-2',
+		data: {
+			message: 'You loaded this page on ' + new Date().toLocaleString()
+		}
+	})
+	var app3 = new Vue({
+    delimiters: ['[[', ']]'],
+		el: '#app-3',
+		data: {
+			seen: true
+		}
+	})
+	var app4 = new Vue({
+    delimiters: ['[[', ']]'],
+		el:'#app-4',
+		data: {
+			todos: [
+				{ text: 'Learn Vue'},
+				{ text: 'Learn Django'},
+				{ text: 'Build cool shit'}
+			]
+		}
+	})
+	var app5 = new Vue({
+    delimiters: ['[[', ']]'],
+		el: '#app-5',
+		data: {
+			message: 'Hello Vue.js!'
+		},
+		methods: {
+			reverseMessage: function() {
+				this.message = this.message.split('').reverse().join('')
+			}
+		}
+	})
+	var app6 = new Vue({
+    delimiters: ['[[', ']]'],
+		el: '#app-6',
+		data: {
+			message: 'Hello Vue!'
+		}
+	})
+	Vue.component('todo-item', {
+		// The todo-item component now accepts a "prop", which is like
+		// a custom attribute. This prop is called todo.
+		props: ['todo'],
+		template: '<li>{{ todo.text }}</li>'
+	})
+
+	var app7 = new Vue({
+    delimiters: ['[[', ']]'],
+		el: '#app-7',
+		data: {
+			groceryList: [
+				{ id: 0, text: 'Vegetables' },
+				{ id: 1, text: 'Cheese' },
+				{ id: 2, text: 'Whatever else u want'}
+			]
+		}
+	})
+  </script>
+</body>
+</html>
