@@ -19,6 +19,7 @@ from django.contrib import admin
 
 urlpatterns = [
 	url(r'^polls/', include('polls.urls', namespace="polls")),
+	url(r'^diagassist/', include('diagassist.urls', namespace="diagassist")),
 	#url(r'^diagassist/', include('diagassist.urls')),
     url(r'^admin/', admin.site.urls),
 	url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
