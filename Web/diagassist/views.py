@@ -8,7 +8,8 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 from .models import Therapist, Symptom, Diagnostic
-from .forms import SignUpForm
+from diagassist.forms import SignUpForm
+from django.contrib.auth.decorators import login_required
 
 
 # class IndexView(generic.ListView):
@@ -20,8 +21,20 @@ def indexView(request):
 	
 def loginView(request):
 	template_name = 'login.html'
-	return render(request, template_name)
+	_message = 'Please sign in'
+	if request.method == 'POST':
+		_username = request.POST['username']
+		_password = request.POST['password']
+		user = authenticate(username=_username, password=_password)
+		if user is not None:
+			auth_login(request, user)
+			return HttpResponseRedirect(reverse('home'))
+		else:
+			_message = 'Invalid login, please try again.'
+	context = {'message': _message}
+	return render(request, template_name, context)
 	
+@login_required()
 def logoutView(request):
 	template_name = 'logout.html'
 	return render(request, template_name)
