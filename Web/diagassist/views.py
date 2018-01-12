@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 from .models import Therapist, Symptom, Diagnostic
@@ -21,7 +21,7 @@ def indexView(request):
 	
 def loginView(request):
 	template_name = 'login.html'
-	_message = 'Please sign in'
+	message = 'Please sign in'
 	if request.method == 'POST':
 		username = request.POST['username']
 		password = request.POST['password']
@@ -30,14 +30,20 @@ def loginView(request):
 			login(request, user)
 			return HttpResponseRedirect('/')
 		else:
-			_message = 'Invalid login, please try again.'
-	context = {'message': _message}
+			message = 'Invalid login, please try again.'
+	context = {'message': message}
 	return render(request, template_name, context)
 	
 @login_required()
 def logoutView(request):
+	logout(request)
+    # Redirect to a success page.
+	return HttpResponseRedirect('/logout-success/')
+
+def logoutSuccessView(request):
 	template_name = 'logout.html'
 	return render(request, template_name)
+	
 	
 def signupView(request):
 	template_name = 'signup.html'

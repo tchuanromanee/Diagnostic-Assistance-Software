@@ -12,7 +12,9 @@ urlpatterns = [
 	# ex: /diagassist/login/
     url(r'^login/$', views.loginView, name='login-view'),
 	# ex: /diagassist/logout/
-    url(r'^logout/$', views.logoutView, name='logout-view')
+    url(r'^logout/$', views.logoutView, name='logout-view'),
+	# ex: /diagassist/logout/
+    url(r'^logout-success/$', views.logoutSuccessView, name='logout-success-view')
     # ex: /polls/5/results/
     #url(r'^(?P<pk>[0-9]+)/results/$', views.ResultsView.as_view(), name='results'),
     # ex: /polls/5/vote/
