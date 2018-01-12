@@ -21,6 +21,10 @@ def loginView(request):
 	template_name = 'login.html'
 	return render(request, template_name)
 	
+def logoutView(request):
+	template_name = 'logout.html'
+	return render(request, template_name)
+	
 def signupView(request):
 	template_name = 'signup.html'
 	if request.method == 'POST':
