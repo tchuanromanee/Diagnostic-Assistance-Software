@@ -8,6 +8,7 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 from .models import Therapist, Symptom, Diagnostic
+from .forms import SignUpForm
 
 
 # class IndexView(generic.ListView):
@@ -28,16 +29,16 @@ def logoutView(request):
 def signupView(request):
 	template_name = 'signup.html'
 	if request.method == 'POST':
-		form = UserCreationForm(request.POST)
+		form = SignUpForm(request.POST)
 		if form.is_valid():
 			form.save()
 			username = form.cleaned_data.get('username')
 			raw_password = form.cleaned_data.get('password1')
 			user = authenticate(username=username, password=raw_password)
 			login(request, user)
-			return redirect('home')
+			return redirect('/')
 	else:
-		form = UserCreationForm()
+		form = SignUpForm()
 	return render(request, template_name, {'form': form})	
 
 # Create your views here.
