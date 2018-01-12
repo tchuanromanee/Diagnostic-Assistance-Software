@@ -1,0 +1,50 @@
+body {
+    background-color: #EEEEEE;
+    font-size: 12pt;
+    font-family: sans-serif, arial;
+}
+
+/* Header definitions */
+h1 {
+    font-size: 16pt;
+    font-family: sans-serif, arial;
+    color: #545960;
+    text-align: center;
+    border-bottom: 1px solid #545960;
+}
+
+h2 {
+    font-size: 14pt;
+    color: #7789a3;
+}
+
+/* Link definitions */
+a {
+    color: #545960;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ABC1D0;
+    text-decoration: none;
+}
+
+/* Text decoration elements */
+strong, em {
+    color: #ABC1D0;
+}
+
+img {
+    padding: 10px;
+}
+
+/* Div definitions */
+/* The div is an ID because maincontent will only occur once */
+#maincontent {
+    position: relative;
+    padding: 15px;
+    margin: auto;
+    background-color: white;
+    width: 60%;
+    text-align: justify;
+}
