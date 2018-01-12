@@ -23,12 +23,12 @@ def loginView(request):
 	template_name = 'login.html'
 	_message = 'Please sign in'
 	if request.method == 'POST':
-		_username = request.POST['username']
-		_password = request.POST['password']
-		user = authenticate(username=_username, password=_password)
+		username = request.POST['username']
+		password = request.POST['password']
+		user = authenticate(username=username, password=password)
 		if user is not None:
-			auth_login(request, user)
-			return HttpResponseRedirect(reverse('home'))
+			login(request, user)
+			return HttpResponseRedirect('/')
 		else:
 			_message = 'Invalid login, please try again.'
 	context = {'message': _message}
