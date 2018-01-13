@@ -39,12 +39,15 @@ def loginView(request):
 def logoutView(request):
 	logout(request)
     # Redirect to a success page.
-	return HttpResponseRedirect('/../logout-success/')
+	return HttpResponseRedirect('/diagassist/logout-success/')
 
 def logoutSuccessView(request):
 	template_name = 'logout.html'
 	return render(request, template_name)
-	
+
+def signupSuccessView(request):
+	template_name = 'signup-success.html'
+	return render(request, template_name)
 	
 def signupView(request):
 	template_name = 'signup.html'
@@ -56,7 +59,7 @@ def signupView(request):
 			raw_password = form.cleaned_data.get('password1')
 			user = authenticate(username=username, password=raw_password)
 			login(request, user)
-			return redirect('/')
+			return redirect('/diagassist/signup-success/')
 	else:
 		form = SignUpForm()
 	return render(request, template_name, {'form': form})	
