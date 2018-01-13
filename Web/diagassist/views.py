@@ -29,7 +29,7 @@ def loginView(request):
 		user = authenticate(username=username, password=password)
 		if user is not None:
 			login(request, user)
-			return HttpResponseRedirect('/')
+			return HttpResponseRedirect('/diagassist/')
 		else:
 			message = 'Invalid login, please try again.'
 	context = {'message': message, 'form': form}
@@ -39,7 +39,7 @@ def loginView(request):
 def logoutView(request):
 	logout(request)
     # Redirect to a success page.
-	return HttpResponseRedirect('/logout-success/')
+	return HttpResponseRedirect('/../logout-success/')
 
 def logoutSuccessView(request):
 	template_name = 'logout.html'
