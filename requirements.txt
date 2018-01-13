@@ -1,5 +1,3 @@
 django
 keras
-csv
-random
 numpy
