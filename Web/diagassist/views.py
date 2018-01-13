@@ -5,7 +5,7 @@ from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
 from django.contrib.auth import login, authenticate, logout
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 # Create your views here.
 from .models import Therapist, Symptom, Diagnostic
 from diagassist.forms import SignUpForm
@@ -22,6 +22,7 @@ def indexView(request):
 def loginView(request):
 	template_name = 'login.html'
 	message = 'Please sign in'
+	form = AuthenticationForm(request.POST)
 	if request.method == 'POST':
 		username = request.POST['username']
 		password = request.POST['password']
@@ -31,7 +32,7 @@ def loginView(request):
 			return HttpResponseRedirect('/')
 		else:
 			message = 'Invalid login, please try again.'
-	context = {'message': message}
+	context = {'message': message, 'form': form}
 	return render(request, template_name, context)
 	
 @login_required()
