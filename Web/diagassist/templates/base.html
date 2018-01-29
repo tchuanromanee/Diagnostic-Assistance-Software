@@ -5,17 +5,30 @@
   <title>Diagnostic Assistance Software</title>
   <script src="https://unpkg.com/vue"></script>
   <BASE href="http://localhost:8000/diagassist/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="{% static '/diagassist/style.css' %}">
 </head>
 <body>
-  <div id = "navigation">
-    <a class = "nav" href = "/diagassist/">Home</a> &nbsp;
-    <a class = "nav" href = "/diagassist/signup">Sign up</a> &nbsp;
-    <a class = "nav" href = "/diagassist/login">Log in</a> &nbsp;
-    <a class = "nav" href = "/diagassist/logout">Log out</a> &nbsp;
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="//">Amazing Grace Counseling Outreach</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/diagassist/">Home</a></li>
+      <li><a href="/diagassist/diagnose">Diagnose</a></li>
+      <li><a href="/diagassist/signup">Sign up</a></li>
+      <li><a href="/diagassist/login">Log in</a></li>
+      <li><a href="/diagassist/logout">Log out</a></li>
+    </ul>
   </div>
+</nav>
+
   <div class="content container">
           {% block content %}
           {% endblock %}
