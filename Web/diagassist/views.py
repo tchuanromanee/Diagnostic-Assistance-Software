@@ -19,6 +19,10 @@ def indexView(request):
 	template_name = 'index.html'
 	return render(request, template_name)
 	
+def diagnoseView(request):
+	template_name = 'diagnose.html'
+	return render(request, template_name)
+	
 def loginView(request):
 	template_name = 'login.html'
 	message = 'Please sign in'

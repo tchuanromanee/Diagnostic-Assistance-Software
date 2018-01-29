@@ -14,7 +14,9 @@ urlpatterns = [
 	# ex: /diagassist/logout/
     url(r'^logout/$', views.logoutView, name='logout-view'),
     url(r'^logout-success/$', views.logoutSuccessView, name='logout-success-view'),
-    url(r'^signup-success/$', views.signupSuccessView, name='signup-success-view')
+    url(r'^signup-success/$', views.signupSuccessView, name='signup-success-view'),
+	# ex: /diagassist/diagnose/
+    url(r'^diagnose/$', views.diagnoseView, name='diagnose-view'),
     # ex: /polls/5/results/
     #url(r'^(?P<pk>[0-9]+)/results/$', views.ResultsView.as_view(), name='results'),
     # ex: /polls/5/vote/

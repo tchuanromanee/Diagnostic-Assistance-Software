@@ -21,6 +21,7 @@ h2 {
 /* Link definitions */
 a {
     color: #545960;
+    text-decoration: none;
 }
 
 a:hover {
