@@ -27,6 +27,7 @@ def diagnoseView(request):
 			form.save()
 			#username = form.cleaned_data.get('username')
 			#raw_password = form.cleaned_data.get('password1')
+			# Call function to diagnose
 			return redirect('/diagassist/')
 	else:
 		form = DiagnoseForm()
