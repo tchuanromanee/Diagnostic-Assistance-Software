@@ -29,6 +29,11 @@
       <li><a href="/diagassist/login">Log in</a></li>
 	  {% endif %}
     </ul>
+	<ul class="nav navbar-nav navbar-right">
+	  <span class="navbar-text">
+		Hello, {{request.user.username}}
+	  </span>
+    </ul>
   </div>
 </nav>
 
