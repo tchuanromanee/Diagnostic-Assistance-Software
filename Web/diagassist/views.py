@@ -8,7 +8,7 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 # Create your views here.
 from .models import Therapist, Symptom, Diagnostic
-from diagassist.forms import SignUpForm
+from diagassist.forms import SignUpForm, DiagnoseForm
 from django.contrib.auth.decorators import login_required
 
 
@@ -21,7 +21,16 @@ def indexView(request):
 	
 def diagnoseView(request):
 	template_name = 'diagnose.html'
-	return render(request, template_name)
+	if request.method == 'POST':
+		form = DiagnoseForm(request.POST)
+		if form.is_valid():
+			form.save()
+			#username = form.cleaned_data.get('username')
+			#raw_password = form.cleaned_data.get('password1')
+			return redirect('/diagassist/')
+	else:
+		form = DiagnoseForm()
+	return render(request, template_name, {'form': form})	
 	
 def loginView(request):
 	template_name = 'login.html'
