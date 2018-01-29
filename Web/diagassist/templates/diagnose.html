@@ -6,13 +6,8 @@
 {% block content %}
 
 {% if user.is_authenticated %}
- <h2>Login</h2>
-  {{ message }}
-    <form method="post">
-      {% csrf_token %}
-      {{form.as_p}}<br/>
-    <button type="submit">Login</button>
-  </form>
+ <h2>Diagnose Clients</h2>
+ 
   
 {% else %}
 You must be logged in to see this page. Please either <a href = "/diagassist/login">log in</a> or 
