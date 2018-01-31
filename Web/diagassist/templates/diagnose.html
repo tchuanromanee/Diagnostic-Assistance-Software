@@ -9,7 +9,7 @@
  <h2>Diagnose Clients</h2>
    <form method="post">
     {% csrf_token %}
-    {% for field in form %}
+    {% for field in diagForm %}
          <p>
            {{ field.label_tag }}<br>
            {{ field }}
@@ -21,6 +21,7 @@
            {% endfor %}
          </p>
        {% endfor %}
+	 {{diagSympForm.as_p}}
        <button type="submit">Diagnose</button>
   </form>
   
