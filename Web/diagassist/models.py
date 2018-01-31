@@ -4,6 +4,7 @@ from django.contrib.auth.models import AbstractUser, User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 import datetime
+from decimal import Decimal
 
 
 class Diagnostic(models.Model):
@@ -46,7 +47,7 @@ class DiffDiag(models.Model): # Relates each diagnosis to a differential diagnos
 
 class Symptom(models.Model):
 	sympID = models.AutoField(primary_key=True)
-	smpNumber = models.DecimalField(max_digits=5, decimal_places=2)
+	sympNumber = models.DecimalField(max_digits=6, decimal_places=2)
 	name = models.CharField(max_length=500)
 
 class Therapist(models.Model):
