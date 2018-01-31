@@ -1,3 +1,4 @@
 django
+django-autocomplete-light
 keras
 numpy
