@@ -46,6 +46,7 @@ class DiffDiag(models.Model): # Relates each diagnosis to a differential diagnos
 
 class Symptom(models.Model):
 	sympID = models.AutoField(primary_key=True)
+	smpNumber = models.DecimalField(max_digits=5, decimal_places=2)
 	name = models.CharField(max_length=500)
 
 class Therapist(models.Model):
