@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from dal import autocomplete
 from .models import Diagnostic
 
 
@@ -14,9 +15,9 @@ class SignUpForm(UserCreationForm):
         fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2', )
 
 genderChoices = [
-	('m', 'Male'),
-	('f', 'Female'),
-	('x', 'Other'),
+	(0, 'Male'),
+	(1, 'Female'),
+	(2, 'Other'),
 	]
 class DiagnoseForm(forms.Form):
 	# Gender
@@ -30,3 +31,9 @@ class DiagnoseForm(forms.Form):
 	#first_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
 	#last_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
 	#email = forms.EmailField(max_length=254, help_text='Required.')
+	class Meta:
+		model = Diagnostic
+		fields = ('__all__')
+		widgets = {
+			'name': autocomplete.ModelSelect2(url='diagnose')
+		}
