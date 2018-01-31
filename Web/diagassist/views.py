@@ -32,7 +32,7 @@ def diagnoseView(request):
 	else:
 		form = DiagnoseForm()
 	return render(request, template_name, {'form': form})	
-	
+
 def loginView(request):
 	template_name = 'login.html'
 	message = 'Please sign in'
