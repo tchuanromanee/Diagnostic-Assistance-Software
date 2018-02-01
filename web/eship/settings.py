@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'diagassist.apps.DiagassistConfig',
+	'dal',
+	'dal_select2',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -129,3 +131,18 @@ STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static/'),
 )
 STATIC_URL = '/static/'
+
+# Login redirect URL
+# https://simpleisbetterthancomplex.com/tutorial/2016/06/27/how-to-use-djangos-built-in-login-system.html
+LOGIN_REDIRECT_URL = '/diagassist/'
+LOGIN_URL = '/diagassist/login/'
+
+# https://stackoverflow.com/questions/6606827/django-how-to-redirect-django-contrib-auth-views-login-after-login
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.request",
+    "django.core.context_processors.static",
+)
