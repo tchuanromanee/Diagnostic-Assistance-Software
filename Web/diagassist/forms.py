@@ -31,7 +31,7 @@ class DiagnoseForm(forms.Form):
 	#last_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
 	#email = forms.EmailField(max_length=254, help_text='Required.')
 	# Symptom 1
-	symp1 = forms.ModelChoiceField(queryset=Symptom.objects.values('sympID', 'name'), label='Symptom 1')
+	symp1 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 1')
 	# Persistent 1
 	persistent1 = forms.BooleanField(label='Symptom 1 Persistent?', required=False)
 	# Symptom 2

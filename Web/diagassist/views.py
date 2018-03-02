@@ -19,9 +19,15 @@ def indexView(request):
 	template_name = 'index.html'
 	return render(request, template_name)
 	
+	
+def diagnoseSuccessView(request):
+	template_name = 'diagnose_success.html'
+	return render(request, template_name)
+	
+
 def diagnoseView(request):
 	template_name = 'diagnose.html'
-	template_name = 'diagnose_success.html'
+	success_template = 'diagnose_success.html'
 	if request.method == 'POST':
 		form = DiagnoseForm(request.POST)
 		if form.is_valid():
@@ -41,10 +47,12 @@ def diagnoseView(request):
 			persistent5 = form.cleaned_data.get('persistent5')
 			symp6 = form.cleaned_data.get('symp6')
 			persistent6 = form.cleaned_data.get('persistent6')
+			#print(form.cleaned_data['symp1'])
 			#Convert true/false of presistent to 0s and 1s
 			# Call function to diagnose
-			#return redirect('/diagassist/')
-			return render(request, success_template, {'gender': gender, 'age': age, 'preexisting': preexisting, 'symp1': symp1, 'persistent1': presistent1})	
+			#eturn redirect('/diagassist/')
+			#return HttpResponseRedirect('/diagnose-success/')
+			return render(request, success_template, {'gender': gender, 'age': age, 'preexisting': preexisting, 'symp1': symp1, 'persistent1': persistent1})	
 	
 	else:
 		form = DiagnoseForm()
