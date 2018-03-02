@@ -21,15 +21,31 @@ def indexView(request):
 	
 def diagnoseView(request):
 	template_name = 'diagnose.html'
+	template_name = 'diagnose_success.html'
 	if request.method == 'POST':
 		form = DiagnoseForm(request.POST)
 		if form.is_valid():
-			form.save()
-			#username = form.cleaned_data.get('username')
-			#raw_password = form.cleaned_data.get('password1')
+			# form.save()
+			gender = form.cleaned_data.get('gender')
+			age = form.cleaned_data.get('age')
+			preexisting = form.cleaned_data.get('preexisting')
+			symp1 = form.cleaned_data.get('symp1')
+			persistent1 = form.cleaned_data.get('persistent1')
+			symp2 = form.cleaned_data.get('symp2')
+			persistent2 = form.cleaned_data.get('persistent2')
+			symp3 = form.cleaned_data.get('symp3')
+			persistent3 = form.cleaned_data.get('persistent3')
+			symp4 = form.cleaned_data.get('symp4')
+			persistent4 = form.cleaned_data.get('persistent4')
+			symp5 = form.cleaned_data.get('symp5')
+			persistent5 = form.cleaned_data.get('persistent5')
+			symp6 = form.cleaned_data.get('symp6')
+			persistent6 = form.cleaned_data.get('persistent6')
 			#Convert true/false of presistent to 0s and 1s
 			# Call function to diagnose
-			return redirect('/diagassist/')
+			#return redirect('/diagassist/')
+			return render(request, success_template, {'gender': gender, 'age': age, 'preexisting': preexisting, 'symp1': symp1, 'persistent1': presistent1})	
+	
 	else:
 		form = DiagnoseForm()
 	return render(request, template_name, {'diagForm': form})	
