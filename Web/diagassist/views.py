@@ -8,7 +8,7 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 # Create your views here.
 from .models import Therapist, Symptom, Diagnostic
-from diagassist.forms import SignUpForm, DiagnoseForm, DiagnoseSympForm
+from diagassist.forms import SignUpForm, DiagnoseForm
 from django.contrib.auth.decorators import login_required
 
 
@@ -32,8 +32,7 @@ def diagnoseView(request):
 			return redirect('/diagassist/')
 	else:
 		form = DiagnoseForm()
-		sympForm = DiagnoseSympForm()
-	return render(request, template_name, {'diagForm': form, 'diagSympForm': sympForm})	
+	return render(request, template_name, {'diagForm': form})	
 
 def loginView(request):
 	template_name = 'login.html'
