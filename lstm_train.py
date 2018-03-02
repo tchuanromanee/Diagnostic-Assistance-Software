@@ -5,7 +5,6 @@ from keras.models import Sequential
 from keras.layers import Dense, Embedding, Flatten, Dropout
 from keras.layers import LSTM
 from keras import layers
-from keras.datasets import imdb
 import csv
 import random
 from keras import metrics
