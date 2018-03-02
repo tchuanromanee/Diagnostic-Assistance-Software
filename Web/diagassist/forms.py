@@ -31,29 +31,29 @@ class DiagnoseForm(forms.Form):
 	#last_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
 	#email = forms.EmailField(max_length=254, help_text='Required.')
 	# Symptom 1
-	symp1 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 1')
+	symp1 = forms.ModelChoiceField(queryset=Symptom.objects.values('sympID', 'name'), label='Symptom 1')
 	# Persistent 1
-	persistent1 = forms.BooleanField(label='Symptom 1 Persistent?')
+	persistent1 = forms.BooleanField(label='Symptom 1 Persistent?', required=False)
 	# Symptom 2
-	symp2 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 2')
+	symp2 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 2', required=False)
 	# Persistent 2
-	persistent2 = forms.BooleanField(label='Symptom 2 Persistent?')
+	persistent2 = forms.BooleanField(label='Symptom 2 Persistent?', required=False)
 	# Symptom 3
-	symp3 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 3')
+	symp3 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 3', required=False)
 	# Persistent 3
-	persistent3 = forms.BooleanField(label='Symptom 3 Persistent?')
+	persistent3 = forms.BooleanField(label='Symptom 3 Persistent?', required=False)
 	# Symptom 4
-	symp4 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 4')
+	symp4 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 4', required=False)
 	# Persistent 4
-	persistent4 = forms.BooleanField(label='Symptom 4 Persistent?')
+	persistent4 = forms.BooleanField(label='Symptom 4 Persistent?', required=False)
 	# Symptom 5
-	symp5 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 5')
+	symp5 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 5', required=False)
 	# Persistent 5
-	persistent5 = forms.BooleanField(label='Symptom 5 Persistent?')
+	persistent5 = forms.BooleanField(label='Symptom 5 Persistent?', required=False)
 	# Symptom 6
-	symp6 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 6')
+	symp6 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 6', required=False)
 	# Persistent 6
-	persistent6 = forms.BooleanField(label='Symptom 6 Persistent?')
+	persistent6 = forms.BooleanField(label='Symptom 6 Persistent?', required=False)
 
 
 def processDiagnosis():
