@@ -30,11 +30,6 @@ class DiagnoseForm(forms.Form):
 	#first_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
 	#last_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
 	#email = forms.EmailField(max_length=254, help_text='Required.')
-	class Meta:
-		model = Diagnostic
-		fields = ('diagID', 'name')
-
-class DiagnoseSympForm(forms.Form):
 	# Symptom 1
 	symp1 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 1')
 	# Persistent 1
@@ -59,9 +54,7 @@ class DiagnoseSympForm(forms.Form):
 	symp6 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 6')
 	# Persistent 6
 	persistent6 = forms.BooleanField(label='Symptom 6 Persistent?')
-	#first_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
-	#last_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
-	#email = forms.EmailField(max_length=254, help_text='Required.')
-	class Meta:
-		model = Symptom
-		fields = ('sympNumber','name')
+
+
+def processDiagnosis():
+	modelInputs = []
