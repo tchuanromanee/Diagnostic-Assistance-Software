@@ -26,12 +26,12 @@ class DiagnoseForm(forms.Form):
 	# Age
 	age = forms.IntegerField()
 	# Pre-existing Conditions
-	preexisting = forms.ModelMultipleChoiceField(queryset=Diagnostic.objects.all(), label='Pre-existing Condition')
+	preexisting = forms.ModelChoiceField(queryset=Diagnostic.objects.all(), label='Pre-existing Condition', required=False)
 	#first_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
 	#last_name = forms.CharField(max_length=30, required=False, help_text='Optional.')
 	#email = forms.EmailField(max_length=254, help_text='Required.')
 	# Symptom 1
-	symp1 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 1')
+	symp1 = forms.ModelChoiceField(queryset=Symptom.objects.all(), label='Symptom 1', to_field_name="sympNumber")
 	# Persistent 1
 	persistent1 = forms.BooleanField(label='Symptom 1 Persistent?', required=False)
 	# Symptom 2
