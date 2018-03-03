@@ -52,6 +52,7 @@ def diagnoseView(request):
 			# Call function to diagnose
 			#eturn redirect('/diagassist/')
 			#return HttpResponseRedirect('/diagnose-success/')
+			possibleDiag = evaluate(gender, age, preexisting, symp1, persistent1, symp2, persistent2, symp3, persistent3, symp4, persistent4, symp5, persistent5, symp6, persistent6)
 			return render(request, success_template, {'gender': gender, 'age': age, 'preexisting': preexisting, 'symp1': symp1, 'persistent1': persistent1})	
 	
 	else:
