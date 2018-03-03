@@ -4,7 +4,6 @@ from keras.models import Sequential
 from keras.layers import Dense, Embedding, Flatten, Dropout
 from keras.layers import LSTM
 from keras import layers
-from keras.datasets import imdb
 import csv
 import random
 from keras import metrics
@@ -13,15 +12,18 @@ from keras.models import load_model
 
 
 # Preload our model
-print("Loading model")
 model = load_model('./model/model.h5', compile=False)
 
+def evaluate(gender, age, preexisting, symp1, persistent1, symp2, persistent2, symp3, persistent3, symp4, persistent4, symp5, persistent5, symp6, persistent6):
+	# Preprocess data
+	
+	# Load model
+	
+	return
 
-THRESHOLD = 0.5
-@app.route('/predict', methods=['POST'])
+
 def predict(inputArray):
 
     prediction = model.predict(inputArray)
-    print('PREDICTION COUNT', (prediction[:, :, 1]>0.5).sum())
 
-    return
+    return prediction
